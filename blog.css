@@ -1,0 +1,132 @@
+/* Styling the article content within the container */
+.article-container {
+    background-color: #333333; /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+.article-container h2 {
+    color: #ffffff; /* White text color for headings */
+}
+
+.article-container .blog-meta {
+    color: #999999; /* Light gray text color for metadata */
+}
+
+.article-container p {
+    color: #cccccc; /* Light gray text color for paragraphs */
+}
+
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a dark background color and light text color */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a background color, centered text, and padding */
+header {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling the navigation menu with a background color, centered text, and list style */
+nav {
+    background-color: #222222;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s; /* Adds a smooth transition effect */
+}
+
+/* Styling the links when hovering */
+nav ul li a:hover {
+    color: #ff9900; /* Changes the color to the desired hover color */
+}
+
+/* Style the main content area with padding and a maximum width */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Secondary text color for less prominent text */
+p {
+    color: #666666;
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Style headings within the main content */
+h2 {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Style the blog metadata (published date and author) */
+.blog-meta {
+    color: #999999;
+    font-size: 14px;
+}
+
+/* Style images within the main content */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#second {
+    color: #666666;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Style the scroll-to-top button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #333; /* Dark background color */
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+

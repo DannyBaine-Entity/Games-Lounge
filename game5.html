@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="game5.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="choices">
+        <button type="button" onclick="playerChoice('rock')">Rock</button>
+        <button type="button" onclick="playerChoice('paper')">Paper</button>
+        <button type="button" onclick="playerChoice('scissors')">Scissors</button>
+    </div>
+    <div id="result"></div>
+
+<!-- Dark Mode Toggle -->
+    <div id="dark-mode-toggle">
+        <label id="dark-mode-label">
+            Dark Mode
+            <input type="checkbox" id="dark-mode-checkbox" onchange="toggleDarkMode()">
+        </label>
+    </div>
+
+    <script src="game5.js"></script>
+    <p>&copy; 2023 Games Lounge</p>
+</body>
+</html>

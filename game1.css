@@ -1,0 +1,61 @@
+/* Apply some basic styling to the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333; /* Gradient from blue to darker blue */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #666666;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #666666;
+}
+
+#copyright {
+    color: #666666;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Style the input field and button */
+#guessInput {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#guessSubmit {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#guessSubmit:hover {
+    background-color: #0056b3;
+}
+
+/* Style the message text */
+.message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 20px;
+}

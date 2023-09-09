@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#copyright {
+    color: #666666;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hangman-container {
+    background-color: #444; /* Slightly darker background */
+    border: 2px solid #555; /* Darker border color */
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hangman-word {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase letters for consistency */
+    letter-spacing: 5px; /* Increase letter spacing for a stylish look */
+}
+
+.letter-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* Light text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.letter-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.hangman-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ccc; /* Light gray text color for messages */
+}

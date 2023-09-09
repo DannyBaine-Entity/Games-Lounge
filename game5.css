@@ -1,0 +1,73 @@
+/* Light mode styles */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    color: #666666;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#dark-mode-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#dark-mode-checkbox {
+    margin-left: 10px;
+    transform: scale(1.5);
+}
