@@ -10,16 +10,16 @@ function checkScroll() {
     }
 }
 
-// Attaching the checkScroll function to the scroll event
+// Attach the checkScroll function to the scroll event
 window.addEventListener("scroll", checkScroll);
 
 // Function to scroll to the top of the page when the button is clicked
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: "smooth" // This adds smooth scrolling
     });
 }
 
-// Attaching the scrollToTop function to the button click event
+// Attach the scrollToTop function to the button click event
 scrollToTopBtn.addEventListener("click", scrollToTop);

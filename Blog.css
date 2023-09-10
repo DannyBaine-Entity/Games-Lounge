@@ -1,0 +1,149 @@
+/* Define the color palette variables */
+:root {
+    --background-color: #1a1a1a; /* Dark background color */
+    --text-color: #ffffff; /* White text color */
+    --accent-color: #ff9900; /* Bright accent color */
+    --dark-background: #333333; /* Darker background color */
+    --light-gray-text: #cccccc; /* Light gray text color */
+    --lighter-gray-text: #999999; /* Lighter gray text color */
+}
+
+/* Styling the article content within the container */
+.article-container {
+    background-color: var(--dark-background); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+.article-container h2 {
+    color: var(--light-gray-text); /* White text color for headings */
+}
+
+.article-container .blog-meta {
+    color: var(--lighter-gray-text); /* Light gray text color for metadata */
+}
+
+.article-container p {
+    color: var(--light-gray-text); /* Light gray text color for paragraphs */
+}
+
+/* Resetting some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the body with a dark background color and light text color */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the header with a background color, centered text, and padding */
+header {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling the navigation menu with a background color, centered text, and list style */
+nav {
+    background-color: var(--dark-background);
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
+/* Styling the links when hovering */
+nav ul li a:hover {
+    color: var(--accent-color); /* Changes the color to the desired hover color */
+}
+
+/* Styling the main content area with padding and a maximum width */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Secondary text color for less prominent text */
+p {
+    color: var(--light-gray-text);
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Styling the headings within the main content */
+h2 {
+    background-color: #444444;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+/* Styling the blog metadata (published date and author) */
+.blog-meta {
+    color: var(--lighter-gray-text);
+    font-size: 14px;
+}
+
+/* Styling images within the main content */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#contain {
+    color: var(--text-color);
+}
+
+#EX {
+    color: var(--light-gray-text)
+}
+
+#second {
+        color: #666666;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 18px;
+}
+
+/* Styling the scroll-to-top button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: var(--dark-background); /* Dark background color */
+    color: var(--text-color);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Darker color on hover */
+}

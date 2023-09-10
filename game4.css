@@ -1,8 +1,22 @@
+/* Define your color palette */
+:root {
+    --background-color: #333;
+    --text-color: #fff;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #666666;
+    --cell-bg-color: #222;
+    --cell-hover-color: #444;
+    --winner-bg-color: #2ecc71;
+    --winner-border-color: #27ae60;
+}
+
+/* Apply your CSS styles with the color palette */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -27,24 +41,24 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    background-color: var(--cell-bg-color);
     cursor: pointer;
-    border: 1px solid #444;
+    border: 1px solid #444; /* Keep this border color as it is */
 }
 
 .cell:hover {
-    background-color: #444;
+    background-color: var(--cell-hover-color);
 }
 
 /* Add this style for winning cells */
 .cell.winner {
-    background-color: #2ecc71;
-    border-color: #27ae60;
+    background-color: var(--winner-bg-color);
+    border-color: var(--winner-border-color);
     color: #fff;
 }
 
 #copyright {
-    color: #666666;
+    color: var(--secondary-color);
     text-align: center;
     margin: 20px 0;
     font-size: 18px;
@@ -54,19 +68,20 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 #restart-button {
     font-size: 16px;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #restart-button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-hover-color);
 }

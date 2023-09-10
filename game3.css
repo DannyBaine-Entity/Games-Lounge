@@ -1,7 +1,18 @@
-/* Add your CSS styles here */
+/* Color Palette */
+:root {
+    --background-color: #111;
+    --text-color: #fff;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #666666;
+    --button-bg-color: #ff9900;
+    --button-border-color: #ffcc00;
+}
+
+/* Applying my CSS styles with the color palette */
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 20px;
@@ -37,8 +48,8 @@ h1 {
 .mole {
     width: 80px;
     height: 80px;
-    background: #ff9900;
-    border: 5px solid #ffcc00;
+    background: var(--button-bg-color);
+    border: 5px solid var(--button-border-color);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -52,8 +63,8 @@ h1 {
 }
 
 button#start-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -64,11 +75,11 @@ button#start-button {
 }
 
 button#start-button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-hover-color);
 }
 
 #copyright {
-    color: #666666;
+    color: var(--secondary-color);
     text-align: center;
     margin: 20px 0;
     font-size: 18px;
@@ -78,4 +89,3 @@ button#start-button:hover {
     font-size: 18px;
     margin-top: 20px;
 }
-

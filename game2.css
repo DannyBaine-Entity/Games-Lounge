@@ -1,9 +1,15 @@
-/* styles.css */
+/* Color Palette */
+:root {
+    --primary-bg-color: #222; /* Primary Background Color */
+    --main-text-color: #fff; /* All the text color */
+    --button-bg-color: #007bff; /* Button Background Color */
+    --hover-bg-color: #0056b3; /* Darker Button Background Color on hover */
+}
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #222; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: var(--primary-bg-color); /* Dark background color */
+    color: var(--main-text-color); /* Light text color */
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -50,15 +56,15 @@ p {
     font-size: 18px;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #007bff; /* Blue button color */
-    color: #fff; /* Light text color */
+    background-color: var(--button-bg-color); /* Blue button color */
+    color: var(--main-text-color); /* Light text color */
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .letter-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: var(--hover-bg-color); /* Darker blue on hover */
 }
 
 .hangman-message {

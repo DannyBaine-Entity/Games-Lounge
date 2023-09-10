@@ -1,23 +1,17 @@
-/* Add a class for the fixed navigation */
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100; /* Ensure it's above other elements */
-    background-color: #222222; /* Background color for fixed nav */
+/* Define a color palette */
+:root {
+    --primary-bg-color: #1a1a1a; /* Dark background color */
+    --secondary-bg-color: #333333; /* Slightly darker background color */
+    --header-bg-color: #1a1a1a; /* Header background color */
+    --text-color: #ffffff; /* White text color */
+    --link-color: #ff9900; /* Link color */
+    --nav-bg-color: #222222; /* Navigation background color */
+    --accent-color: #666666; /* Accent color */
+    --button-bg-color: #555; /* Button background color on hover */
+    --button-text-color: #fff; /* Button text color on hover */
 }
 
-/* Add a class for the placeholder to preserve spacing */
-.nav-placeholder {
-    height: 50px; /* Adjust the height to match your nav's height */
-}
-
-/* Add padding to body to create space for the fixed nav */
-body {
-    padding-top: 50px; /* Equal to the height of the fixed nav */
-}
-/* Reset some default styles for better consistency */
+/* Resetting some default styles for better consistency */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -25,21 +19,21 @@ body, h1, h2, p {
 
 /* General styles for body */
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
 }
 
 /* Header styles */
 header {
-    background-color: #333333;
+    background-color: var(--header-bg-color);
     text-align: center;
     padding: 20px;
 }
 
 /* Navigation menu styles */
 nav {
-    background-color: #222222;
+    background-color: var(--nav-bg-color);
     text-align: center;
 }
 
@@ -54,32 +48,35 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-color);
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff9900;
+    color: var(--link-color);
 }
 
-/* Main content area styles */
-main {
-    padding: 20px;
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
+/* Add padding to body to create space for the fixed nav */
+body {
+    padding-top: 50px; /* Equal to the height of the fixed nav */
 }
 
-#contact a{
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+#copy {
+    margin-top: 20px;
+    color: var(--accent-color);
+    font-size: 18px;
 }
 
-#contact a:hover{
-    color: #ff9900;
-
+#contact {
+    color: var(--accent-color);
 }
+
+#contact p{
+    color: var(--accent-color);
+    padding-top: 10px;
+}
+
 /* Featured games section styles */
 #featured-games-container li {
     flex-basis: calc(33.33% - 20px); /* Adjust the width of featured game items */
@@ -101,6 +98,7 @@ main {
     max-width: 100%;
     height: auto;
 }
+
 /* Featured games container styles */
 #featured-games-container {
     background-color: #333; /* Background color for the container */
@@ -125,8 +123,6 @@ main {
 #featured-games-container p {
     color: #666666;
 }
-/* Rest of your existing CSS styles for featured games */
-
 
 /* Latest news section styles */
 #latest-news-container {
@@ -148,7 +144,7 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: #333333;
+    background-color: var(--secondary-bg-color);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
@@ -160,8 +156,8 @@ footer {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--nav-bg-color);
+    color: var(--button-text-color);
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -172,5 +168,5 @@ footer {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #555;
+    background-color: var(--button-bg-color);
 }

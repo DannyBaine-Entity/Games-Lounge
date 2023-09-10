@@ -15,18 +15,20 @@ function checkWinner() {
 
     for (const pattern of winPatterns) {
         const [a, b, c] = pattern;
-        if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+        if (gameBoard[a] !== '' && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             gameActive = false;
             message.textContent = `Player ${currentPlayer} wins!`;
             cells[a].classList.add('winner');
             cells[b].classList.add('winner');
             cells[c].classList.add('winner');
+            console.log(`Player ${currentPlayer} wins!`);
         }
     }
 
     if (!gameBoard.includes('') && gameActive) {
         gameActive = false;
         message.textContent = "It's a draw!";
+        console.log("It's a draw!");
     }
 }
 
